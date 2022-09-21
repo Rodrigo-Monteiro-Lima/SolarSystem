@@ -1,3 +1,195 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./images/background.png');
+  color: white;
+  font-family: Epilogue , sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.planets {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.planet {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  justify-content: center;
+  min-width: 73px;
+  position: relative;
+  z-index: 1;
+}
+
+.planets hr {
+  position: absolute;
+  top: 524px;
+  width: 100%;
+}
+
+.planet-name {
+  bottom: 0;
+  position: absolute;
+}
+
+h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.Mercúrio {
+  height: 31px;
+  width: 41px;
+}
+
+.Vênus {
+  height: 76px;
+  width: 102px;
+}
+
+.Terra {
+  height: 79px;
+  width: 106px;
+}
+
+.Marte {
+  height: 50px;
+  width: 66px;
+}
+
+.Júpiter {
+  height: 204px;
+  width: 272px;
+}
+
+.Saturno {
+  height: 210.9px;
+  transform: rotate(-16.53deg);
+  width: 282.41px;
+}
+
+.Urano {
+  height: 109px;
+  width: 144px;
+}
+
+.Netuno {
+  height: 107px;
+  width: 144px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  width: 1098px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.container h2 {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  flex-direction: column;
+  height: 192px;
+  justify-content: space-around;
+  width: 496px;
+}
+
+.name-card {
+  display: flex;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  margin-top: 20px;
+  padding-left: 27px;
+  text-transform: uppercase;
+}
+
+.info-card {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  justify-content: space-between;
+  line-height: 120%;
+  margin-bottom: 15px;
+  padding: 0 27px;
+}
+
+.card hr {
+  height: 1px;
+}
+
+.year {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.country {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.destination {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.year p {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  margin-left: 10px;
+  padding-top: 7px;
+  width: 52px;
+}
+
+.country p {
+  margin-left: 10px;
+  width: 145px;
+}
+
+.destination p {
+  margin-left: 10px;
+  width: 136px;
 }
